@@ -351,10 +351,19 @@
                                     <version>${cobertura.version}</version>
                                     <configuration>
                                         <formats>
-                                            <!--<format>html</format>-->
+                                            <format>html</format>
                                             <format>xml</format>
                                         </formats>
+					<check/>
                                     </configuration>
+				    <executions>
+					<execution>
+					    <phase>clean</phase>
+					    <goals>
+					      <goal>cobertura</goal>
+					    </goals>
+					</execution>
+				     </executions>
                                 </plugin>
                                 <plugin>
                                     <groupId>org.apache.maven.plugins</groupId>
@@ -473,7 +482,7 @@
                         <version>${cobertura.version}</version>
                         <configuration>
                             <formats>
-                                <!--<format>html</format>-->
+                                <format>html</format>
                                 <format>xml</format>
                             </formats>
                         </configuration>
