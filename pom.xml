@@ -16,6 +16,7 @@
         <targetJdk>1.6</targetJdk>
         <github.account>wakaleo</github.account>
         <thucydides.version>0.9.22</thucydides.version>
+	<reporting.plugins.plugin.version>2.6</reporting.plugins.plugin.version>
     </properties>
 
     <scm>
